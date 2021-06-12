@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Droid Serif", YuGothic, "游明朝", sans-serif;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow:auto; 
+  -webkit-overflow-scrolling:touch;
+  border:2px solid #ccc; 
+}
+.map iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+}
+
+
+
+.animated {
+  opacity: 0;
+}
+
+.showcase {
+  margin: 0 auto;
+
+  width: 88%;
+  max-width: 940px;
+}
+
+.showcase__details {
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 460px;
+}
+
+.showcase__kind-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.showcase__kind-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.card {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.card__number,
+.card__icon {
+  font-size: 2.5rem;
+}
+
+.card__description {
+  margin: 0 auto;
+
+  font-size: 1.3125rem;
+  width: 80%;
+}
+
+
+.top {
+  position: relative;
+}
+
+.top,
+.top__bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top__title {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  line-height: 77px;
+  letter-spacing: 4px;
+  color: black;
+}
+
+.top__catchphrase {
+  font-size: 0.9rem;
+}
+
+.top__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: #fff;
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  
+  opacity: 0.6;
+
+}
+
+.top__slideshow {
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.top__text-box {
+  position: relative;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: 100;
+}
+
+.roomplan {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: white;
+}
+
+.roomplan__phrase,
+.equipment__phrase,
+.location__phrase,
+.payment__phrase,
+.contact__phrase {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.79px;
+}
+
+.roomplan__title,
+.equipment__title,
+.location__title,
+.payment__title,
+.contact__title {
+  margin-bottom: 37px;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+.contact__description {
+  margin-bottom: 37px;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+
+.equipment {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: white;
+}
+
+.map { text-align: center;}
+
+.location {
+  padding-top: 82px;
+  padding-bottom: 44px;
+  background-color: white;
+}
+
+.payment {
+  padding-top: 82px;
+  padding-bottom: 300px;
+  background-color: white;
+}
+
+.contact {
+  padding-top: 82px;
+  padding-bottom: 300px;
+  background-color: white;
+}
+
+ul {
+list-style: none;
+}
+
+
+footer {
+  padding: 50px 0;
+  background-color: #fafaf3;
+  text-align: center;
+}
+
+.tabs__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.tabs__menu li {
+  display: inline-block;
+  margin-bottom: 12px;
+  opacity: 0.5;
+
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.tabs__menu a {
+  display: block;
+  color: #557f95;
+  text-decoration: none;
+}
+
+.tabs__menu li:not(.active):hover {
+  opacity: 0.7;
+}
+
+.tabs__menu .active {
+  opacity: 1;
+}
+.tabs__menu .active a {
+  color: #3f4548;
+}
+
+.tabs__content section {
+  display: none;
+}
+
+.tabs__content section.active {
+  display: block;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .top__catchphrase {
+    font-size: 1.125rem;
+  }
+
+  .roomplan__title,
+  .equipment__title,
+  .location__title,
+  .payment__title,
+  .contact__title {
+    font-size: 4rem;
+  }
+
+  .roomplan__phrase,
+  .equipment__phrase,
+  .location__phrase,
+  .payment__phrase,
+  .contact__phrase {
+    font-size: 1.5rem;
+  }
+
+  .contact__description {
+    font-size: 4rem;
+  }
+  
+  ul {
+  list-style: none;
+  }
+
+  .card__number,
+  .card__icon {
+    font-size: 4rem;
+  }
+
+  .showcase--leftpic .showcase__thumbnails {
+    text-align: left;
+  }
+  .showcase--rightpic .showcase__thumbnails {
+    text-align: right;
+  }
+
+  .showcase--rightpic .showcase__kind-name {
+    text-align: right;
+  }
+
+  .showcase__details {
+    max-width: 320px;
+  }
+  .showcase--leftpic .showcase__details {
+    margin: 0 auto 0 0;
+  }
+  .showcase--rightpic .showcase__details {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media print {
+  .animated {
+    opacity: 1;
+  }
+}
